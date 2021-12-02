@@ -1,0 +1,27 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+header {
+    background: image/header4.jpg ;
+}
+
+body {
+    background-color: rgb(93, 119, 93);
+
+}
+/*.header_img {
+    height: 100px;
+    width: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+*/
+
+.header_img {
+    height: 100px;
+    width: auto;
+}
