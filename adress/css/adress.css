@@ -40,7 +40,8 @@ header {
     list-style: none;
     display: flex;
     width: 600px;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+    margin: 15mm;
 }
 
 .link {

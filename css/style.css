@@ -11,8 +11,8 @@ header {
     height: 200px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     grid-area: head;
@@ -29,23 +29,23 @@ header {
 }
 #header-text {
     color: white;
+    justify-content: center;
 }
 #namn {
     font-size: 20mm;
     display: flex;
-    align-items: flex-start;
     justify-content: center;
 }
 #undertext {
     font-size: 6mm;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 #link_list {
     list-style: none;
     display: flex;
     width: 600px;
-    justify-content: space-evenly;
+    justify-content: space-evenly        ;
 }
 
 .meny_link {
@@ -59,38 +59,39 @@ header {
 .meny_link:hover {
     color: rgb(117, 96, 61);
 }
-
-#image {
-    width: 100%;
-    height: auto;
-    justify-content: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-attachment: fixed;
-    float: none;
-}
 .wrapper {
     width: 100vw;
     height: 100vh;
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-    grid-template-rows: 100px 100px 50px 100px 100px 500px 10px 10px;
+    display: ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px 50px 100px 100px 500px 10px 10px;
 
     grid-template-areas:
-    "head head"
-    "image image"
-    "nav nav"
-    "s1 s2"
-    "s3 s4"
-    "s5 s6"
-    "fot fot"
+    "head head head"
+    "image image image"
+    "ti ti ti"
+    "s1 si s2"
+    "s3 s4 s4"
+    "s5 s5 s6"
     ;
-    gap: 5px;
+    gap: 10px;
 }
-    #nav {
+    #image {
+        grid-area: image;
+        width: 100%;
+        height: 0%;
+        justify-content: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-attachment: fixed;
+        float: none;
+}
+    #title {
         color: white;
-        grid-area: nav;
+        font-size: 23mm;
+        justify-content: center;
+        grid-area: ti;
         border-width: auto;
         border-style: dotted;
     }
@@ -100,37 +101,50 @@ header {
         justify-content: center;
         border-width: auto;
         border-style: dotted;
+        grid-column-start: 1;
+        grid-row-end: 3;
     }
     
     #section_2 {
         grid-area: s2;
         border-width: auto;
         border-style: dotted;
+        grid-column: 2/3;
     }
     
     #section_3 {
         grid-area: s3;
         border-width: auto;
         border-style: dotted;
+        grid-column-start: 1;
+        grid-row-end: 3;
     }
     #section_4 {
         grid-area: s4;
         border-width: auto;
         border-style: dotted;
+        grid-column: 2/3;
     }
     
     #section_5 {
         grid-area: s5;
         border-width: auto;
         border-style: dotted;
+        grid-column-start: 1;
+        grid-row-end: 3;
     }
     #section_6 {
         grid-area: s6;
         border-width: auto;
         border-style: dotted;
+        grid-column: 2/3;
     }
     #footer {
-        grid-area: fot;
         border-width: auto;
         border-style: dotted;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
     }
