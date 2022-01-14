@@ -45,7 +45,7 @@ header {
     list-style: none;
     display: flex;
     width: 600px;
-    justify-content: space-evenly        ;
+    justify-content: space-evenly;
 }
 
 .meny_link {
@@ -62,7 +62,7 @@ header {
 .wrapper {
     width: 100vw;
     height: 100vh;
-    display: ;
+    display: flexbox;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100px 100px 100px 100px 50px 100px 100px 500px 10px 10px;
 
