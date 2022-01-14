@@ -18,7 +18,7 @@ header {
     grid-area: head;
 }
 
-.header-content {
+.header-main {
     color: #f1f1f1;
     
 }
@@ -27,17 +27,17 @@ header {
     width: auto;
     border-radius: 100%;
 }
-#header-text {
+#header-text-main {
     color: white;
     justify-content: center;
 }
 #namn {
-    font-size: 20mm;
+    font-size: 5rem;
     display: flex;
     justify-content: center;
 }
 #undertext {
-    font-size: 6mm;
+    font-size: 1.5rem;
     justify-content: center;
 }
 
@@ -51,7 +51,7 @@ header {
 .meny_link {
     text-decoration:none;
     color: rgb(255, 255, 255);
-    font-size: 15mm;
+    font-size: 3.5rem;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
 }
@@ -59,11 +59,11 @@ header {
 .meny_link:hover {
     color: rgb(117, 96, 61);
 }
-.wrapper {
+/*.wrapper */ {
     width: 100vw;
     height: 100vh;
     display: flexbox;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: minmax(500px, 1fr) 80px;
     grid-template-rows: 100px 100px 100px 100px 50px 100px 100px 500px 10px 10px;
 
     grid-template-areas:
@@ -89,7 +89,7 @@ header {
 }
     #title {
         color: white;
-        font-size: 23mm;
+        font-size: 5,5rem;
         justify-content: center;
         grid-area: ti;
         border-width: auto;
@@ -141,10 +141,45 @@ header {
     }
     #footer {
         border-width: auto;
-        border-style: dotted;
         position: fixed;
         left: 0;
         bottom: 0;
         width: 100%;
         text-align: center;
+        background-color: rgba(90, 110, 94, 0.815);
     }
+
+/* Styling för Meny & Hitta hit */
+.header-extra {
+    color: #f1f1f1;    
+}
+#header-text-extra {
+    color: white;
+}
+#namn-extra {
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+    
+#links {
+    list-style: none;
+    display: flex;
+    width: 600px;
+    justify-content: flex-end;
+    margin: 3rem;
+}
+    
+.link {
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+    font-size: 5.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    list-style: none;
+    display: flex;
+    width: 600px;
+    justify-content: flex-end;
+    margin: 3rem;
+}
